@@ -2,7 +2,7 @@
 
 namespace Test;
 
-use App\FileCacheAdapter;
+use Sanzodown\SimplePHPCache\FileCacheAdapter;
 use PHPUnit\Framework\TestCase;
 
 final class FileCacheAdapterTest extends TestCase

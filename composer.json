@@ -1,6 +1,7 @@
 {
-    "name": "sanzodown/simple-cache-php",
-    "description": "A simple cache library in php",
+    "name": "sanzodown/simple-php-cache",
+    "description": "A simple cache library in php.",
+    "license": "MIT",
     "authors": [
         {
             "name": "Sanzodown",
@@ -9,8 +10,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "App\\" : "app",
-            "Test\\" : "tests"
+            "Sanzodown\\SimplePHPCache\\" : "src/",
+            "Test\\" : "tests/"
         }
     },
     "require": {

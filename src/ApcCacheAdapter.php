@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace Sanzodown\SimplePHPCache;
 
 class ApcCacheAdapter implements CacheInterface
 {

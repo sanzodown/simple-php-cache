@@ -1,6 +1,6 @@
 <?php
 
-namespace app;
+namespace Sanzodown\SimplePHPCache;
 
 interface CacheInterface
 {

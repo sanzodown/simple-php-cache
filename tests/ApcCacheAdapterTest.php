@@ -2,7 +2,7 @@
 
 namespace Test;
 
-use App\ApcCacheAdapter;
+use Sanzodown\SimplePHPCache\ApcCacheAdapter;
 use PHPUnit\Framework\TestCase;
 
 final class ApcCacheAdapterTest extends TestCase
