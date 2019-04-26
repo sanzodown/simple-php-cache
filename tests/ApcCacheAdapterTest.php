@@ -2,14 +2,14 @@
 
 namespace Test;
 
-use Sanzodown\SimplePHPCache\ApcCacheAdapter;
+use Sanzodown\SimplePHPCache\ApcCache;
 use PHPUnit\Framework\TestCase;
 
 final class ApcCacheAdapterTest extends TestCase
 {
     public function testCanSetCacheStringAndRetrieveIt(): void
     {
-        $cache = new ApcCacheAdapter();
+        $cache = new ApcCache();
         $cache->set('test', 'ceci est un test');
 
         $this->assertSame('ceci est un test', $cache->get('test'));
@@ -17,7 +17,7 @@ final class ApcCacheAdapterTest extends TestCase
 
     public function testCanSetCacheArrayAndRetrieveIt(): void
     {
-        $cache = new ApcCacheAdapter();
+        $cache = new ApcCache();
         $dataArray = [
             'elvis' => 'presley',
             'enjoy' => 'phoenix'

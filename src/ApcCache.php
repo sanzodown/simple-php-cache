@@ -2,12 +2,12 @@
 
 namespace Sanzodown\SimplePHPCache;
 
-class ApcCacheAdapter implements CacheInterface
+class ApcCache implements CacheInterface
 {
     private const DEFAULT_TTL = 3600;
     private $ttl;
 
-    public function __construct(int $ttl = ApcCacheAdapter::DEFAULT_TTL)
+    public function __construct(int $ttl = self::DEFAULT_TTL)
     {
         $this->ttl = $ttl;
         if (!extension_loaded('apcu')) {

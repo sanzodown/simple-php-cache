@@ -12,7 +12,7 @@ composer require sanzodown/simple-php-cache
 Both come with default configuration so if you don't bother, use it.
 #####File cache:
 ```:
-$cache = new FileCacheAdapter(
+$cache = new FileCache(
     'your/cache/path',
     'youNameFile'
 );
@@ -23,7 +23,7 @@ $cache = new FileCacheAdapter(
 Note that you must have the extension [APCu](https://www.php.net/manual/fr/book.apcu.php) enabled.
 
 ```:
-$cache = new ApcCacheAdapter(
+$cache = new ApcCache(
     3600, // Time to live
 );
 ```

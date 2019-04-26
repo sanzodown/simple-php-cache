@@ -2,7 +2,7 @@
 
 namespace Sanzodown\SimplePHPCache;
 
-class FileCacheAdapter implements CacheInterface
+class FileCache implements CacheInterface
 {
     private const EXT = '.tmp';
 
@@ -38,7 +38,7 @@ class FileCacheAdapter implements CacheInterface
 
     private function cacheFilePath(): string
     {
-        return $this->path . DIRECTORY_SEPARATOR . $this->fileName . $this::EXT;
+        return $this->path . DIRECTORY_SEPARATOR . $this->fileName . self::EXT;
     }
 
     private function loadFromCache(): ?array

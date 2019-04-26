@@ -2,14 +2,14 @@
 
 namespace Test;
 
-use Sanzodown\SimplePHPCache\FileCacheAdapter;
+use Sanzodown\SimplePHPCache\FileCache;
 use PHPUnit\Framework\TestCase;
 
 final class FileCacheAdapterTest extends TestCase
 {
     public function testCanSetCacheStringAndRetrieveIt(): void
     {
-        $cache = new FileCacheAdapter();
+        $cache = new FileCache();
         $cache->set('test', 'toto');
 
         $this->assertSame('toto', $cache->get('test'));
@@ -17,7 +17,7 @@ final class FileCacheAdapterTest extends TestCase
 
     public function testCanSetCacheArrayAndRetrieveIt(): void
     {
-        $cache = new FileCacheAdapter();
+        $cache = new FileCache();
         $dataArray = [
             'hello' => 'bjr',
             'bye' => 'au revoir'
