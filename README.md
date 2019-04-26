@@ -1,16 +1,17 @@
 A simple cache library for php.
 It implement both a file and a memory ([APCu](https://www.php.net/manual/fr/book.apcu.php)) cache back-ends. 
 
-### Installation
+## Installation
 As simple as :
 ```:
 composer require sanzodown/simple-php-cache
 ```
 
-### Usage
+## Usage
 
 Both come with default configuration so if you don't bother, use it.
-#####File cache:
+
+### File cache:
 ```:
 $cache = new FileCache(
     'your/cache/path',
@@ -18,7 +19,7 @@ $cache = new FileCache(
 );
 ```
 
-#####Memory cache:
+### Memory cache:
 
 Note that you must have the extension [APCu](https://www.php.net/manual/fr/book.apcu.php) enabled.
 
@@ -28,7 +29,7 @@ $cache = new ApcCache(
 );
 ```
 
-#####Methods:
+### Methods:
 ```:
 $cache->set('key', 'Your datas');
 
