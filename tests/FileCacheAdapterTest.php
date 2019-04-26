@@ -2,12 +2,12 @@
 
 namespace Test;
 
-use PHPUnit\Framework\TestCase;
 use App\FileCacheAdapter;
+use PHPUnit\Framework\TestCase;
 
-final class CacheTest extends TestCase
+final class FileCacheAdapterTest extends TestCase
 {
-    public function testCanSetCacheAndRetrieveIt()
+    public function testCanSetCacheStringAndRetrieveIt(): void
     {
         $cache = new FileCacheAdapter();
         $cache->set('test', 'toto');
@@ -15,7 +15,7 @@ final class CacheTest extends TestCase
         $this->assertSame('toto', $cache->get('test'));
     }
 
-    public function testCanSetCacheArrayAndRetrieveIt()
+    public function testCanSetCacheArrayAndRetrieveIt(): void
     {
         $cache = new FileCacheAdapter();
         $dataArray = [
