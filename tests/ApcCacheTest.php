@@ -5,7 +5,7 @@ namespace Test;
 use Sanzodown\SimplePHPCache\ApcCache;
 use PHPUnit\Framework\TestCase;
 
-final class ApcCacheAdapterTest extends TestCase
+final class ApcCacheTest extends TestCase
 {
     public function testCanSetCacheStringAndRetrieveIt(): void
     {

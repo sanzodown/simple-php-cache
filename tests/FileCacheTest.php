@@ -5,7 +5,7 @@ namespace Test;
 use Sanzodown\SimplePHPCache\FileCache;
 use PHPUnit\Framework\TestCase;
 
-final class FileCacheAdapterTest extends TestCase
+final class FileCacheTest extends TestCase
 {
     public function testCanSetCacheStringAndRetrieveIt(): void
     {
